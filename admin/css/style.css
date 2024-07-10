@@ -1,0 +1,581 @@
+.pts_admin_wrapper {
+  background-color: #fff;
+  border: 1px solid #dedede;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  max-width: 60%;
+  margin: 20px 0;
+  padding: 30px;
+}
+.pts_admin_wrapper h2 {
+  border-bottom: 1px solid #e0e0e0;
+  margin-top: 0;
+  padding: 10px 0;
+}
+.pts_admin_wrapper .form-group {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+#admin_user_date_destination input {
+  width: 280px;
+}
+#admin_user_date_destination input[type="submit"] {
+  width: auto;
+}
+.pts_admin_wrapper .form-group label {
+  min-width: 150px;
+}
+.paradise-admin-table {
+  margin: 15px 0;
+}
+.paradise-admin-table .paradise-table {
+  border-radius: 0;
+}
+.paradise-admin-table h4 {
+  background: #87680c !important;
+  padding: 15px 20px;
+  color: #fff;
+  margin: 0;
+  font-size: 1.5em;
+}
+.booking-setting-table {
+  border: transparent;
+  border-collapse: collapse;
+  width: 50%;
+  background: #fff;
+  padding: 20px;
+  margin-top: 20px;
+}
+.booking-setting-table td,
+.booking-setting-table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.booking-setting-table th {
+  background: #87680c !important;
+  color: #fff;
+}
+.paradise-table tr td:first-child,
+.paradise-table tr td:last-child {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center !important;
+  text-align: left;
+  gap: 10px;
+}
+.paradise-table tr td:first-child img,
+.paradise-table tr td:last-child img {
+  width: 50px;
+  border-radius: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: top;
+}
+.paradise-table tr td:first-child span,
+.paradise-table tr td:last-child span {
+  display: block;
+  line-height: 1;
+}
+.paradise-table tr td:first-child span + span,
+.paradise-table tr td:last-child span + span {
+  margin-top: 5px; /* Adjust spacing as needed */
+}
+#admin_user_date_destination input[type="submit"] {
+  background: #007cba;
+  align-items: center;
+  /* -webkit-appearance: none; */
+  border: 0;
+  border-radius: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 400;
+  height: 36px;
+  margin: 0;
+  padding: 6px 12px;
+  text-decoration: none;
+  transition: box-shadow 0.1s linear;
+  outline: 1px solid #0000;
+  text-decoration: none;
+  text-shadow: none;
+  white-space: nowrap;
+}
+.user_profile_image img,
+.driver_car_image_main img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+}
+.admin_customer_details span:first-child {
+  font-size: 16px;
+}
+
+/* -----------------------------
+  USER PROFILE 
+  -------------------------------*/
+.user-edit-php .user_profile_image img,
+.user-edit-php .driver_car_image_main img {
+  width: 300px;
+  height: 210px;
+  object-fit: cover;
+}
+
+/* ---------------------------------------
+DRIVER TABLE
+-----------------------------------------*/
+.driver-lists-table {
+  width: 100%;
+  background: #fff;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 1px solid #c3c4c7;
+}
+.driver-lists-table td,
+.driver-lists-table th {
+  padding: 10px 20px;
+}
+.driver-lists-table tr:nth-child(even) {
+  background-color: #f6f7f7;
+}
+.driver-lists-table tr:last-child td {
+  border-bottom: none;
+}
+.driver-lists-table th:first-child,
+.driver-lists-table td:first-child {
+  text-align: left;
+}
+.driver-lists-table td {
+  text-align: center;
+}
+.driver-lists-table th:last-child,
+.driver-lists-table td:last-child {
+  text-align: right;
+}
+.driver-lists-table td.username {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.driver-lists-table td.username span {
+  margin-top: 10px;
+}
+.driver-row-actions {
+  width: 100%;
+  visibility: hidden;
+  margin-top: 5px;
+}
+.driver-row-actions span a {
+  font-weight: 400;
+}
+.driver-lists-table td:hover .driver-row-actions {
+  visibility: visible;
+}
+.driver-lists-table a {
+  text-decoration: none;
+  font-weight: 600;
+}
+/* .driver-row-actions span:not(.driver-row-actions span:last-child) {
+  border-right: 1px solid;
+  margin-right: 5px;
+} */
+
+/*----------------- end of driver table --------------*/
+
+.pts_admin_wrapper {
+  background-color: #fff;
+  border: 1px solid #dedede;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  max-width: 60%;
+  margin: 20px 0;
+  padding: 30px;
+}
+.pts_admin_wrapper h2 {
+  border-bottom: 1px solid #e0e0e0;
+  margin-top: 0;
+  padding: 10px 0;
+}
+.pts_admin_wrapper .form-group {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+#admin_user_date_destination input {
+  width: 280px;
+}
+#admin_user_date_destination input[type="submit"] {
+  width: auto;
+}
+.pts_admin_wrapper .form-group label {
+  min-width: 150px;
+}
+.paradise-admin-table {
+  margin: 15px 0;
+}
+.paradise-admin-table .paradise-table {
+  border-radius: 0;
+}
+.paradise-admin-table h4 {
+  background: #87680c !important;
+  padding: 15px 20px;
+  color: #fff;
+  margin: 0;
+  font-size: 1.5em;
+}
+.booking-setting-table {
+  border: transparent;
+  border-collapse: collapse;
+  width: 50%;
+  background: #fff;
+  padding: 20px;
+  margin-top: 20px;
+}
+.booking-setting-table td,
+.booking-setting-table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.booking-setting-table th {
+  background: #87680c !important;
+  color: #fff;
+}
+.paradise-table tr td:first-child,
+.paradise-table tr td:last-child {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center !important;
+  text-align: left;
+  gap: 10px;
+}
+.paradise-table tr td:first-child img,
+.paradise-table tr td:last-child img {
+  width: 50px;
+  border-radius: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: top;
+}
+.paradise-table tr td:first-child span,
+.paradise-table tr td:last-child span {
+  display: block;
+  line-height: 1;
+}
+.paradise-table tr td:first-child span + span,
+.paradise-table tr td:last-child span + span {
+  margin-top: 5px; /* Adjust spacing as needed */
+}
+#admin_user_date_destination input[type="submit"] {
+  background: #007cba;
+  align-items: center;
+  /* -webkit-appearance: none; */
+  border: 0;
+  border-radius: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 400;
+  height: 36px;
+  margin: 0;
+  padding: 6px 12px;
+  text-decoration: none;
+  transition: box-shadow 0.1s linear;
+  outline: 1px solid #0000;
+  text-decoration: none;
+  text-shadow: none;
+  white-space: nowrap;
+}
+.user_profile_image img,
+.driver_car_image_main img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+}
+.admin_customer_details span:first-child {
+  font-size: 16px;
+}
+
+/* -----------------------------
+USER PROFILE 
+-------------------------------*/
+.user-edit-php .user_profile_image img,
+.user-edit-php .driver_car_image_main img {
+  width: 300px;
+  height: 210px;
+  object-fit: cover;
+}
+
+/* -----------------------------
+CAR TRIPS DOCS
+-------------------------------*/
+.wpte-dashboard .wpte-lrf-content-area .wpte-lrf-sidebar .wpte-lrf-tab {
+  outline: none !important;
+}
+.car-trip-doc {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 20px;
+}
+.car-trip-doc:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+
+.car-trip-doc .car-trip-col {
+  /* flex-basis: calc(33.33% - 10px); */
+}
+.car-trip-doc .col-1 {
+  width: 25%;
+}
+.car-trip-doc .col-2 {
+  width: 35%;
+}
+.car-trip-doc .col-3 {
+  width: 40%;
+}
+.car-trip-doc .car-trip-col:first-child {
+  text-align: left;
+}
+.car-trip-doc .car-trip-col:last-child {
+  text-align: right;
+}
+.car-trip-doc .car-trip-col img {
+  width: 310px;
+  height: 150px;
+  object-fit: cover;
+}
+.car-trip-doc h5 {
+  margin-bottom: 0;
+}
+.car-trip-col input {
+  font-size: 18px;
+}
+.wp-travel .wpte-dashboard .wpte-lrf-sidebar .wpte-lrf-tab {
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.wp-travel
+  .wpte-dashboard
+  .wpte-lrf-content-area
+  .wpte-lrf-tab.lrf-car-trip::before,
+.wp-travel
+  .wpte-dashboard
+  .wpte-lrf-content-area
+  .wpte-lrf-tab.lrf-car-trip-doc::before {
+  font-family: fontawesome;
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  font-size: 18px;
+}
+.wp-travel
+  .wpte-dashboard
+  .wpte-lrf-content-area
+  .wpte-lrf-tab.lrf-car-trip::before {
+  content: "\f1b9" !important;
+}
+.wp-travel
+  .wpte-dashboard
+  .wpte-lrf-content-area
+  .wpte-lrf-tab.lrf-car-trip-doc::before {
+  content: "\f15b" !important;
+}
+.car-trip-image video#my-video {
+  width: 100%;
+}
+.car-trip-doc [type="file"]::file-selector-button {
+  display: block;
+}
+.car-trip-doc input {
+  width: 100%;
+  /* max-width: 120px; */
+}
+
+/* admin booking table style start*/
+/* Table Styles */
+
+.table-wrapper {
+  /* margin: 10px 70px 70px; */
+  /* box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2); */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.paradise-table {
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+  overflow-x: auto;
+  margin: 0;
+  border-radius: 0;
+  margin-top: 0;
+}
+#bf9b30 .paradise-table td,
+.paradise-table th {
+  text-align: center;
+  padding: 8px;
+}
+
+.paradise-table td {
+  border-right: 1px solid #ebebeb;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+}
+.paradise-table tr td:last-child {
+  border-right: transparent;
+}
+.paradise-table tr:not(:last-child) {
+  border-bottom: 1px solid #ebebeb;
+}
+.paradise-table thead th {
+  color: #ffffff !important;
+  background: #bf9b30 !important;
+  border-right-color: #d3b14b;
+  border-left: none;
+}
+.paradise-table thead th:first-child {
+  border-left: 1px solid #bf9b30;
+}
+.paradise-table tbody td {
+  border: none;
+  border-right: 1px solid #ebebeb;
+  border-left: 1px solid #ebebeb;
+}
+.paradise-table tbody tr {
+  border: 1px solid #ebebeb;
+}
+/* #primary .paradise-table#pd-cust-table thead th:nth-child(odd),
+#primary .paradise-table#pd-driver-table thead th:nth-child(odd)
+{
+  color: #ffffff;
+  background: #324960;
+} */
+
+.paradise-table#pd-cust-table tr:nth-child(even),
+.paradise-table#pd-driver-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+.paradise-table td img {
+  width: 50px;
+  border-radius: 50px;
+}
+.paradise-driver-table .paradise-table tr td:last-child {
+  display: table-cell;
+  text-align: center;
+}
+.paradise-customer-table .paradise-table tr td:first-child {
+  display: table-cell;
+  text-align: center;
+}
+/* .paradise-table td:last-child, */
+.paradise-table td:first-child:not(.paradise-customer-table td),
+#pd-cust-table td:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.table-wrapper {
+  overflow-x: auto;
+}
+/* admin booking table style end*/
+
+/* setting page css collapse start*/
+.accordion > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+
+.accordion .content {
+  overflow-y: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+  height: auto;
+  overflow: visible;
+}
+
+.accordion label {
+  display: block;
+}
+
+.accordion {
+  margin-bottom: 1em;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+  padding: 15px;
+  border: 1px solid #e8e8e8;
+  border-top: 0;
+}
+
+.accordion .handle {
+  margin: 0;
+  font-size: 1.125em;
+  line-height: 1.2em;
+}
+
+.accordion label {
+  color: #333;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 15px;
+  background: #e8e8e8;
+}
+
+.accordion label:hover,
+.accordion label:focus {
+  background: #d8d8d8;
+}
+
+.accordion .handle label:before {
+  font-family: "fontawesome";
+  content: "\f054";
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 0.58em;
+  line-height: 1.556em;
+  vertical-align: middle;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .handle label:before {
+  content: "\f078";
+}
+
+
+.accordion {
+  max-width: 65em;
+}
+
+.accordion p:last-child {
+  margin-bottom: 0;
+}
+/* setting page css collapse end*/

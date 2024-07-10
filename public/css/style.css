@@ -1,0 +1,800 @@
+/* ---------------------------------------
+DRIVER REGISTRATION FORM
+-----------------------------------------*/
+
+:root {
+  --ps-white: #fff;
+  --border-color: #e6e7ee;
+}
+.driver-form-wrapper .driver-form-container {
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0px 4px 40px 0px
+    rgba(28.000000000000057, 32.00000000000007, 17.00000000000004, 0.04);
+  background: var(--wp--preset--color--white);
+  padding: 30px;
+}
+.driver-registration-form input {
+  display: block;
+  width: 100%;
+}
+.driver-registration-form .form-group {
+  padding: 8px 0;
+  position: relative;
+}
+.driver-registration-form i {
+  position: absolute;
+  right: 10px;
+  bottom: 17px;
+}
+.driver-registration-form i::before {
+  font-family: "FontAwesome";
+  font-style: normal;
+}
+.driver-file-upload {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.driver-file-upload .file-upload-wrapper {
+  flex-basis: calc(50% - 10px);
+  position: relative;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 0.8em;
+  background-color: var(--ps-white);
+}
+.driver-file-upload .file-input {
+  width: 100%;
+  height: 50px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  /* z-index: -1; */
+}
+.driver-file-upload .file-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 10px 10px;
+  font-size: 0.8em;
+}
+.driver-file-upload .file-button {
+  background-color: var(--primary-color);
+  color: var(--ps-white);
+  padding: 10px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  line-height: 18px;
+}
+.driver-file-upload .file-name {
+  line-height: 18px;
+  text-align: center;
+}
+.driver-file-upload .file-input:hover + .file-label .file-button,
+.driver-file-upload .file-label:hover .file-button {
+  background-color: var(--primary-color);
+}
+
+.form-group-wrapper {
+  display: flex;
+  gap: 20px;
+}
+.form-group-wrapper .form-group {
+  width: 50%;
+}
+.form-group-wrapper .form-group input[type="password"] {
+  padding-right: 35px;
+}
+
+/* ---------------------------------------
+DRIVER REGISTRATION FORM END
+-----------------------------------------*/
+
+.d-flex {
+  display: flex;
+}
+.gap-10 {
+  gap: 10px;
+}
+.gap-20 {
+  gap: 20px;
+}
+.justify-space-betn {
+  justify-content: space-between;
+}
+.justify-space-around {
+  justify-content: space-around;
+}
+.customer-dashboard-front,
+.driver-dashboard-front {
+  max-width: 1300px !important;
+  margin: auto;
+}
+.customer-dashboard-front .form-group {
+  padding: 10px 5px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+.customer-dashboard-front .form-group:last-child {
+  border: transparent;
+}
+.customer-dashboard-front input:not(input[type="button"]),
+.paradise-front-driver #datePick {
+  padding: 10px 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+}
+.customer-dashboard-front input[type="button"],
+input[type="submit"] {
+  background-color: #bf9b30;
+  border: none;
+  color: #fff;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.customer-dashboard-front label {
+  display: none;
+}
+.customer-dashboard-front #user_date_destination {
+  background-color: #fff;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+.customer-dashboard-front #user_date_destination .booking_details {
+  display: flex;
+}
+
+.customer-dashboard-front #user_date_destination .booking_details .form-group {
+  border-right: none;
+}
+.paradise-customer-table,
+.paradise-driver-table {
+  margin: 15px 0;
+}
+.paradise-customer-table h4,
+.paradise-driver-table h4 {
+  background: #87680c !important;
+  padding: 15px 20px;
+  color: #fff;
+  margin: 0;
+  font-size: 20px !important;
+  font-weight: bold;
+}
+.table-wrapper h5 {
+  font-size: 12px;
+  font-family: "Inter";
+  margin: 0;
+}
+.customer-dashboard-front #user_date_destination .drivers-details img {
+  width: 150px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.driver_details span:first-child {
+  font-size: 16px;
+}
+.paradise_driver_details {
+  display: flex;
+  flex-direction: column;
+}
+.paradise-front-driver {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 50px 30px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  /* margin: auto; */
+  margin-bottom: 20px;
+  width: 50%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.paradise-front-driver input,
+.paradise-front-driver input[type="submit"] {
+  width: fit-content;
+}
+#ui-datepicker-div,
+#ui-datepicker {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+#ui-datepicker-div .ui-datepicker-header a {
+  margin-right: 10px;
+}
+.ui-datepicker-calendar td a {
+  color: #bf9b30 !important;
+}
+/* .ui-datepicker-calendar td a:hover, */
+.ui-datepicker-calendar td a.ui-state-active,
+.ui-datepicker-calendar td.ui-datepicker-today a {
+  color: #000 !important;
+  text-decoration: none;
+}
+/* .ui-datepicker-calendar td .ui-state-highlight, */
+.ui-datepicker-calendar td.ui-state-highlight a {
+  border: transparent;
+  background: red !important;
+  text-align: center;
+  padding: 3px !important;
+  text-decoration: none;
+  border-radius: 50px;
+  color: #fff !important;
+}
+
+.ui-datepicker-calendar .ui-state-highlight,
+.ui-datepicker-calendar .ui-state-highlight a {
+  color: #fff !important;
+  opacity: 0.8;
+}
+#user_date_destination {
+  /* text-align: center; */
+  display: flex;
+  /* justify-content: center; */
+  gap: 20px;
+  margin: 20px 0;
+  flex-direction: column;
+}
+#user_date_destination input::placeholder {
+  color: #a1a1a1;
+}
+#user_date_destination .booking_details {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+#user_date_destination .form-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+}
+#user_date_destination label {
+  font-size: 14px;
+  min-width: 130px;
+}
+#user_date_destination .booking_details input {
+  min-width: 30%;
+}
+.wpte-lrf-tab-content input[type="button"],
+.wpte-lrf-tab-content input[type="submit"] {
+  border: none !important;
+  border-radius: 5px !important;
+  background: #bf9b30 !important;
+}
+.wpte-lrf-tab-content input[type="button"]:hover,
+.wpte-lrf-tab-content input[type="submit"]:hover {
+  color: #fff !important;
+}
+.wp-travel
+  .wpte-dashboard
+  .wpte-lrf-content-area
+  .wpte-lrf-tab.lrf-car-book-block-date::before {
+  font-family: fontawesome;
+  content: "\f05e" !important;
+  font-size: 18px;
+  background: transparent;
+  box-shadow: none;
+}
+.wp-travel
+  .wpte-dashboard
+  .wpte-lrf-content-area
+  .wpte-lrf-tab.lrf-book-car::before {
+  font-family: fontawesome;
+  content: "\f073" !important;
+  font-size: 18px;
+  background: transparent;
+  box-shadow: none;
+}
+.wp-travel
+  .wpte-dashboard
+  .wpte-lrf-content-area
+  .wpte-lrf-tab.lrf-car-trip-for-all::before {
+  font-family: fontawesome;
+  content: "\f080" !important;
+  font-size: 18px;
+  background: transparent;
+  box-shadow: none;
+}
+.lrf-car-book-block-date form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.lrf-car-book-block-date form .form-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+}
+.lrf-car-book-block-date form input[type="submit"] {
+  width: fit-content;
+  border-radius: 5px;
+}
+.driver-dashboard-front h4 {
+  color: #fff;
+}
+.form-group-wrapper {
+  display: flex;
+  gap: 20px;
+}
+.form-group-wrapper .form-group {
+  width: 50%;
+}
+.form-group-wrapper .form-group input[type="password"] {
+  padding-right: 35px;
+}
+/* Arpan CSS for Table */
+
+h2.paradise-table-header {
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  padding: 30px 0;
+}
+.elementor-nav-menu--main ul li:last-child a {
+  background: #bf9b30;
+  color: #ffffff !important;
+  padding: 16px 24px !important;
+  line-height: 1.6875em;
+  font-size: 0.8em;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: ease, 0.2s;
+  outline: none;
+}
+
+/* Table Styles */
+
+.table-wrapper {
+  /* margin: 10px 70px 70px; */
+  /* box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2); */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.paradise-table {
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+  overflow-x: auto;
+  margin: 0;
+  border-radius: 0;
+  margin-top: 0;
+}
+#bf9b30 .paradise-table td,
+.paradise-table th {
+  text-align: center;
+  padding: 8px;
+}
+
+.paradise-table td {
+  border-right: 1px solid #ebebeb;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+}
+.paradise-table tr td:last-child {
+  border-right: transparent;
+}
+.paradise-table tr:not(:last-child) {
+  border-bottom: 1px solid #ebebeb;
+}
+.paradise-table thead th {
+  color: #ffffff !important;
+  background: #bf9b30 !important;
+  border-right-color: #d3b14b;
+  border-left: none;
+}
+.paradise-table thead th:first-child {
+  border-left: 1px solid #bf9b30;
+}
+.paradise-table tbody td {
+  border: none;
+  border-right: 1px solid #ebebeb;
+  border-left: 1px solid #ebebeb;
+}
+.paradise-table tbody tr {
+  border: 1px solid #ebebeb;
+}
+/* #primary .paradise-table#pd-cust-table thead th:nth-child(odd),
+#primary .paradise-table#pd-driver-table thead th:nth-child(odd)
+{
+  color: #ffffff;
+  background: #324960;
+} */
+
+.paradise-table#pd-cust-table tr:nth-child(even),
+.paradise-table#pd-driver-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+.paradise-table td img {
+  width: 50px;
+  border-radius: 50px;
+}
+.paradise-driver-table .paradise-table tr td:last-child {
+  display: table-cell;
+  text-align: center;
+}
+.paradise-customer-table .paradise-table tr td:first-child {
+  display: table-cell;
+  text-align: center;
+}
+/* .paradise-table td:last-child, */
+.paradise-table td:first-child:not(.paradise-customer-table td),
+#pd-cust-table td:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* datepicker css */
+#ui-datepicker-div .ui-datepicker-prev::before,
+#ui-datepicker .ui-datepicker-prev::before {
+  content: "\f100";
+  font-family: "FontAwesome";
+  color: #bf9b30;
+  cursor: pointer;
+}
+#ui-datepicker-div .ui-datepicker-next::after,
+#ui-datepicker .ui-datepicker-next::after {
+  content: "\f101";
+  font-family: "FontAwesome";
+  color: #bf9b30;
+  cursor: pointer;
+}
+#ui-datepicker-div .ui-datepicker-prev,
+#ui-datepicker-div .ui-datepicker-next,
+#ui-datepicker .ui-datepicker-prev,
+#ui-datepicker .ui-datepicker-next {
+  color: transparent;
+}
+#ui-datepicker-div .ui-datepicker-prev span,
+#ui-datepicker-div .ui-datepicker-next span,
+#ui-datepicker .ui-datepicker-prev span,
+#ui-datepicker .ui-datepicker-next span {
+  display: none;
+}
+#ui-datepicker-div .ui-datepicker-header,
+#ui-datepicker .ui-datepicker-header {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
+}
+#ui-datepicker-div .ui-datepicker-header .ui-datepicker-title,
+#ui-datepicker .ui-datepicker-header .ui-datepicker-title {
+  order: 2;
+}
+#ui-datepicker-div .ui-datepicker-header .ui-datepicker-next,
+#ui-datepicker .ui-datepicker-header .ui-datepicker-next {
+  order: 3;
+}
+#ui-datepicker-div .ui-datepicker-calendar td,
+#ui-datepicker .ui-datepicker-calendar td {
+  text-align: center;
+}
+#ui-datepicker-div .ui-datepicker-calendar td span,
+#ui-datepicker .ui-datepicker-calendar td span,
+#ui-datepicker-div .ui-datepicker-calendar td a,
+#ui-datepicker .ui-datepicker-calendar td a {
+  margin: 10px;
+  font-weight: 500;
+  cursor: default;
+}
+
+#ui-datepicker
+  .ui-datepicker-calendar
+  td.ui-state-highlight
+  a.ui-state-default:hover::after {
+  content: "Blocked! Click to unblock.";
+  top: 30px;
+  width: max-content;
+  font-size: 12px;
+}
+#ui-datepicker-div .ui-datepicker-calendar td.ui-state-highlight span::after,
+#ui-datepicker .ui-datepicker-calendar td.ui-state-highlight span::after,
+#ui-datepicker-div .ui-datepicker-calendar td.ui-state-highlight a::after,
+#ui-datepicker .ui-datepicker-calendar td.ui-state-highlight a::after,
+#ui-datepicker .ui-datepicker-calendar td .ui-state-highlight::after {
+  position: absolute;
+  color: #fff;
+  background-color: #000;
+  z-index: 999;
+  padding: 5px 10px;
+}
+
+#ui-datepicker-div .ui-datepicker-calendar tr th,
+#ui-datepicker .ui-datepicker-calendar tr th {
+  color: #000;
+}
+#ui-datepicker-div .ui-datepicker,
+#ui-datepicker .ui-datepicker {
+  border: transparent;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+  background-color: transparent;
+  border: transparent;
+  color: #111111;
+}
+table.ui-datepicker-calendar {
+  border: transparent;
+}
+#ui-datepicker-div.ui-datepicker .ui-datepicker-calendar td,
+#ui-datepicker .ui-datepicker .ui-datepicker-calendar td {
+  border: transparent;
+}
+#ui-datepicker-div.ui-datepicker,
+#ui-datepicker .ui-datepicker {
+  max-width: fit-content;
+  width: auto;
+}
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+  display: none;
+}
+#ui-datepicker-div .ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+#ui-datepicker .ui-widget-header .ui-state-highlight {
+  background: transparent;
+}
+#ui-datepicker-div .ui-datepicker-calendar td a:hover,
+#ui-datepicker .ui-datepicker-calendar td a:hover {
+  color: inherit !important;
+}
+.ui-state-default {
+  position: relative;
+}
+#ui-state-datepicker.ui-datepicker
+  .ui-datepicker-calendar
+  td
+  a.ui-state-active {
+  background-color: #fff;
+  color: #000;
+}
+
+/* sunder csss */
+
+#ui-datepicker-div {
+  display: none;
+}
+
+/* Responsive */
+@media only screen and (min-width: 768px) and (max-width: 1240px) {
+  .customer-dashboard-front #user_date_destination .booking_details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .customer-dashboard-front #user_date_destination .booking_details > div {
+    flex-basis: 49%;
+    padding: 10px 0;
+  }
+  .customer-dashboard-front input:not(input[type="button"]),
+  .paradise-front-driver #datePick {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .table-wrapper {
+    margin: 20px;
+  }
+  .customer-dashboard-front .form-group,
+  .customer-dashboard-front #user_date_destination .booking_details {
+    flex-direction: row;
+  }
+  .customer-dashboard-front #user_date_destination .booking_details {
+    display: flex;
+    flex-direction: column !important;
+    width: 100%;
+  }
+  .customer-dashboard-front input:not(input[type="button"]),
+  .paradise-front-driver #datePick {
+    width: 100%;
+  }
+  .form-group-wrapper,
+  .driver-file-upload {
+    flex-direction: column;
+  }
+  .form-group-wrapper .form-group {
+    width: 100%;
+  }
+}
+
+.paradise-msg {
+  color: rgb(183, 56, 56);
+}
+.booking-success {
+  display: none;
+}
+
+video#my-video {
+  width: 200px;
+}
+
+/* calender */
+#calendar {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  max-width: 1100px;
+  margin: 40px auto;
+  font-size: 14px;
+  width: 50%;
+  margin: auto;
+}
+
+#calendar .fc-view-harness-active {
+  height: 814.815px;
+}
+
+#calendar .fc-col-header,
+#calendar .fc-daygrid-body-unbalanced {
+  width: 1079px;
+}
+
+#primary .page .entry-content table.fc-col-header,
+#primary .page .entry-content table.fc-scrollgrid-sync-table {
+  margin-top: 0;
+  width: 100% !important;
+  margin: 0;
+}
+
+#calendar .fc-scrollgrid-sync-table {
+  width: 1079px;
+  height: 648px;
+}
+
+#calendar .fc-scrollgrid .fc-scroller {
+  overflow: auto !important;
+}
+#calendar .fc-view-harness {
+  height: 650px !important;
+}
+#calendar table td.fc-day {
+  padding: 0 !important;
+  text-align: center;
+}
+
+.view-blocked-date {
+  display: inline-block;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 10px 29px;
+  line-height: 1.6875em;
+  font-size: 0.8em;
+  font-weight: 700;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  transition: ease, 0.2s;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+}
+.view-blocked-date:hover {
+  text-decoration: none;
+}
+
+
+
+
+
+  /* -----------------------------
+  CAR TRIPS DOCS
+  -------------------------------*/
+  .wpte-dashboard .wpte-lrf-content-area .wpte-lrf-sidebar .wpte-lrf-tab {
+    outline: none !important;
+  }
+  .car-trip-doc {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+  }
+  .car-trip-doc:nth-child(odd) {
+    background-color: #f8f8f8;
+  }
+  
+  .car-trip-doc .car-trip-col {
+    /* flex-basis: calc(33.33% - 10px); */
+  }
+  .car-trip-doc .col-1 {
+    width: 25%;
+  }
+  .car-trip-doc .col-2 {
+  width: 35%;
+  }
+  .car-trip-doc .col-3 {
+    width: 40%;
+  }
+  .car-trip-doc .car-trip-col:first-child {
+    text-align: left;
+  }
+  .car-trip-doc .car-trip-col:last-child {
+    text-align: right;
+  }
+  .car-trip-doc .car-trip-col img {
+    width: 310px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .car-trip-doc h5 {
+    margin-bottom: 0;
+  }
+  .car-trip-col input {
+    font-size: 18px;
+  }
+  .wp-travel .wpte-dashboard .wpte-lrf-sidebar .wpte-lrf-tab {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .wp-travel
+    .wpte-dashboard
+    .wpte-lrf-content-area
+    .wpte-lrf-tab.lrf-car-trip::before,
+  .wp-travel
+    .wpte-dashboard
+    .wpte-lrf-content-area
+    .wpte-lrf-tab.lrf-car-trip-doc::before {
+    font-family: fontawesome;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    font-size: 18px;
+  }
+  .wp-travel
+    .wpte-dashboard
+    .wpte-lrf-content-area
+    .wpte-lrf-tab.lrf-car-trip::before {
+    content: "\f1b9" !important;
+  }
+  .wp-travel
+    .wpte-dashboard
+    .wpte-lrf-content-area
+    .wpte-lrf-tab.lrf-car-trip-doc::before {
+    content: "\f15b" !important;
+  }
+  .car-trip-image video#my-video {
+    width: 100%;
+  }
+  .car-trip-doc [type="file"]::file-selector-button {
+    display: block;
+  }
+  .car-trip-doc input {
+    width: 100%;
+    /* max-width: 120px; */
+  }
+
