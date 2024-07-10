@@ -27,11 +27,10 @@ add_action('wp_enqueue_scripts', 'paradice_booking_load_scripts_public');
  * The function `paradice_booking_load_scripts` enqueues various scripts and styles for a booking
  * plugin in WordPress.
  */
-function paradice_booking_load_scripts_admin($hook)
+function paradice_booking_load_scripts_admin()
 {
     $screen = get_current_screen();
-    // var_dump($screen);
-    if (($screen->base === 'user-edit' && $screen->id === 'user-edit') || ( $screen->base === 'user' && $screen->id === 'user') || ($hook === 'car-booking_page_add-booking' )) {
+    if (($screen->base === 'user-edit' && $screen->id === 'user-edit') || ( $screen->base === 'user' && $screen->id === 'user') || ($screen->base === 'car-booking_page_add-booking' && $screen->id === 'car-booking_page_add-booking') || ($screen->base === 'toplevel_page_car-booking-list' && $screen->id === 'toplevel_page_car-booking-list') || ($screen->base === 'car-booking_page_booking-setting' && $screen->id === 'car-booking_page_booking-setting') || ($screen->base === 'profile' && $screen->id === 'profile') || ($screen->base === 'users_page_driver-list' && $screen->id === 'users_page_driver-list')) {
         wp_enqueue_media();
         wp_enqueue_script('fullcalender', 'https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js', '', rand(), true);
         wp_enqueue_script('paradise-jquery', "https://cdn.jsdelivr.net/jquery/latest/jquery.min.js", array(), rand());
