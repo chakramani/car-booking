@@ -17,8 +17,12 @@ if (!defined('ABSPATH')) {
 define('CAR_BOOKING_PLUGIN_DIR', plugin_dir_path(__FILE__));
 
 register_activation_hook(__FILE__, 'activate_car_booking_plugin');
-register_deactivation_hook(__FILE__, 'deactivate_car_booking_plugin');
+// register_deactivation_hook(__FILE__, 'deactivate_car_booking_plugin');
 
+require CAR_BOOKING_PLUGIN_DIR . 'includes/inc.php';
+require CAR_BOOKING_PLUGIN_DIR . 'admin/car-booking-admin.php';
+require CAR_BOOKING_PLUGIN_DIR . 'public/car-booking-public.php';
+require CAR_BOOKING_PLUGIN_DIR . 'includes/author-page-rule.php';
 
 
 /**
@@ -50,6 +54,9 @@ function activate_car_booking_plugin()
                 require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
                 dbDelta($sql);
         }
+
+        my_plugin_rewrite_rules();
+    flush_rewrite_rules();
 }
 
 
@@ -65,9 +72,6 @@ function deactivate_car_booking_plugin()
         $wpdb->query($sql);
 }
 
-require CAR_BOOKING_PLUGIN_DIR . 'includes/inc.php';
-require CAR_BOOKING_PLUGIN_DIR . 'admin/car-booking-admin.php';
-require CAR_BOOKING_PLUGIN_DIR . 'public/car-booking-public.php';
 
 
 add_shortcode('driver-calender', 'driver_calender');
@@ -98,8 +102,8 @@ function driver_calender()
                                                 start: dates[0],
                                                 end: endDate,
                                                 display: 'background', //comment to title
-                                                //color: 'red', //comment for title
-                                                color: entry.block_type === 'self' ? '#df0606' : '#409560', //uncomment for title
+                                                color: '#df0606', //comment for title
+                                                // color: entry.block_type === 'self' ? '#df0606' : '#409560', //uncomment for title
                                         });
                                 });
 

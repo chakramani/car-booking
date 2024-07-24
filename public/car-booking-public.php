@@ -607,12 +607,9 @@ if (!function_exists('paradise_user_profile_fields')) {
                     </td>
                 </tr>
             </table>
-            <?php
-
-            if ($pagenow == 'user-edit.php' || $pagenow == 'profile.php') {
+            <?php if ($pagenow == 'user-edit.php' || $pagenow == 'profile.php') {
                 $profile_image_id = get_user_meta($user->id, 'profile_image_id', true);
-                $profile_image_src = wp_get_attachment_url($profile_image_id);
-            ?>
+                $profile_image_src = wp_get_attachment_url($profile_image_id); ?>
 
                 <table class="form-table">
                     <tr>
@@ -628,12 +625,10 @@ if (!function_exists('paradise_user_profile_fields')) {
                         </td>
                     </tr>
                 </table>
-            <?php
-            }
+            <?php }
             if (($pagenow == 'user-edit.php' || $pagenow == 'profile.php') && in_array('driver', $user_role)) {
                 $car_image_id = get_user_meta($user->id, 'car_image_id', true);
-                $car_image_src = wp_get_attachment_url($car_image_id);
-            ?>
+                $car_image_src = wp_get_attachment_url($car_image_id); ?>
 
                 <table class="form-table">
                     <tr>
@@ -649,13 +644,11 @@ if (!function_exists('paradise_user_profile_fields')) {
                         </td>
                     </tr>
                 </table>
-            <?php
-            }
+            <?php }
             if (($pagenow == 'user-edit.php' || $pagenow == 'profile.php') && in_array('driver', $user_role)) {
                 // $video_id = get_user_meta($user->id, 'ps_video_id', true);
                 // $video_src = wp_get_attachment_url($video_id);
-                $ps_video_url = get_user_meta($user->id, "driver_video_url", true);
-            ?>
+                $ps_video_url = get_user_meta($user->id, "driver_video_url", true); ?>
                 <table class="form-table">
                     <tr>
                         <th><label for="ps-video">Video</label></th>
@@ -667,12 +660,10 @@ if (!function_exists('paradise_user_profile_fields')) {
                         </td>
                     </tr>
                 </table>
-            <?php
-            }
+            <?php }
             if (($pagenow == 'user-edit.php' || $pagenow == 'profile.php') && in_array('driver', $user_role)) {
                 $liscence_image_id = get_user_meta($user->id, 'liscence', true);
-                $liscence_image_src = wp_get_attachment_url($liscence_image_id);
-            ?>
+                $liscence_image_src = wp_get_attachment_url($liscence_image_id); ?>
                 <table class="form-table">
                     <tr>
                         <th><label for="liscence">Liscence Image</label></th>
@@ -686,8 +677,7 @@ if (!function_exists('paradise_user_profile_fields')) {
                         </td>
                     </tr>
                 </table>
-            <?php
-            }
+            <?php }
             if (($pagenow == 'user-edit.php' || $pagenow == 'profile.php') && in_array('driver', $user_role)) {
                 $other_doc1_id = get_user_meta($user->id, 'other_doc1_id', true);
                 $other_doc1_src = wp_get_attachment_url($other_doc1_id); ?>
@@ -703,8 +693,7 @@ if (!function_exists('paradise_user_profile_fields')) {
                         </td>
                     </tr>
                 </table>
-            <?php
-            }
+            <?php }
             if (($pagenow == 'user-edit.php' || $pagenow == 'profile.php') && in_array('driver', $user_role)) {
                 $other_doc2_id = get_user_meta($user->id, 'other_doc2_id', true);
                 $other_doc2_src = wp_get_attachment_url($other_doc2_id); ?>
@@ -720,7 +709,7 @@ if (!function_exists('paradise_user_profile_fields')) {
                         </td>
                     </tr>
                 </table>
-    <?php }
+        <?php }
         }
     }
 
@@ -848,3 +837,50 @@ if (!function_exists('paradise_user_profile_fields')) {
         }
         wp_die();
     }
+
+
+    //driver Listing page 
+    function driver_listings_shortcode($atts)
+    {
+        // Extract shortcode attributes
+        $atts = shortcode_atts(
+            array(
+                'posts_per_page' => 10,
+            ),
+            $atts,
+            'driver_listings'
+        );
+        ob_start();
+
+        $args = array(
+            'role'    => 'driver',
+            'orderby' => 'user_nicename',
+            'order'   => 'ASC'
+        );
+        $users = get_users($args); ?>
+
+        <div class="drivers-container">
+            <?php
+            // Loop through each user
+            foreach ($users as $user) {
+                $user_id = $user->ID;
+                $user_info = get_userdata($user_id);
+                $user_avatar = get_avatar_url($user_id);
+                $user_name = $user_info->display_name;
+                $user_link = get_author_posts_url($user_id);
+            ?>
+                <div class="driver-card">
+                    <a href="<?php echo esc_url($user_link); ?>">
+                        <img src="<?php echo esc_url($user_avatar); ?>" alt="<?php echo esc_attr($user_name); ?>" />
+                        <h3><?php echo esc_html($user_name); ?></h3>
+                    </a>
+                </div>
+            <?php } ?>
+        </div>
+    <?php
+        // Get the buffered content
+        $output = ob_get_clean();
+
+        return $output;
+    }
+    add_shortcode('driver_listings', 'driver_listings_shortcode');

@@ -798,3 +798,115 @@ video#my-video {
     /* max-width: 120px; */
   }
 
+/*
+Driver listing page start
+*/
+
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.gap-10 {
+  gap: 10px;
+}
+.driver-cards-container {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 50px;
+}
+.single-card.driver-details h4 {
+  margin: 20px 0;
+}
+.driver-details-rows {
+  column-gap: 30px;
+  row-gap: 50px;
+  flex-wrap: wrap;
+}
+.driver-details-rows .single-card {
+  border-radius: 25px;
+  border: solid #eaeaea;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+  width: calc(33.333% - 30px);
+}
+.single-card-driver-contents {
+  padding: 20px;
+}
+.single-card-driver-contents p {
+  font-weight: 300;
+  text-align: center;
+  border-top: 1px solid rgba(6, 22, 38, 0.1019607843);
+  padding-top: 20px;
+}
+.single-card-driver-contents .flex {
+  justify-content: center;
+}
+.driver-details img {
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+  height: 250px;
+  object-fit: cover;
+}
+.driver-details a {
+  color: #000;
+  text-decoration: none;
+}
+.driver-details:hover a {
+  color: #1a84ee;
+}
+.single-driver-details-container p {
+  margin: 0;
+}
+.single-driver-details-container {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid #eaeaea; */
+  /* padding: 40px; */
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+.single-driver-page .container {
+  max-width: 1200px;
+  border: 1px solid #eaeaea;
+  padding: 40px;
+}
+.text-center {
+  text-align: center;
+}
+.single-driver-page h2 {
+  text-decoration: underline;
+  color: #1a84ee;
+}
+.single-driver-detail-inner-container {
+  border: 1px solid #000;
+  padding: 30px;
+}
+.single-driver-details-container img {
+  height: 250px;
+  object-fit: cover;
+  flex: 1;
+}
+.single-driver-details-container img + div {
+  flex: 2;
+}
+.single-driver-vehicle-img img {
+  display: flex;
+  margin: auto;
+}
+.single-driver-page button {
+  border: transparent;
+  padding: 12px 30px;
+  background-color: #1a84ee;
+  color: #fff;
+}
+.single-driver-page form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*
+Driver listing page end
+*/
+
