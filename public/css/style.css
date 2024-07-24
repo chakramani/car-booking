@@ -707,96 +707,92 @@ video#my-video {
   text-decoration: none;
 }
 
-
-
-
-
-  /* -----------------------------
+/* -----------------------------
   CAR TRIPS DOCS
   -------------------------------*/
-  .wpte-dashboard .wpte-lrf-content-area .wpte-lrf-sidebar .wpte-lrf-tab {
-    outline: none !important;
-  }
-  .car-trip-doc {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 20px;
-  }
-  .car-trip-doc:nth-child(odd) {
-    background-color: #f8f8f8;
-  }
-  
-  .car-trip-doc .car-trip-col {
-    /* flex-basis: calc(33.33% - 10px); */
-  }
-  .car-trip-doc .col-1 {
-    width: 25%;
-  }
-  .car-trip-doc .col-2 {
+.wpte-dashboard .wpte-lrf-content-area .wpte-lrf-sidebar .wpte-lrf-tab {
+  outline: none !important;
+}
+.car-trip-doc {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 20px;
+}
+.car-trip-doc:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+
+.car-trip-doc .car-trip-col {
+  /* flex-basis: calc(33.33% - 10px); */
+}
+.car-trip-doc .col-1 {
+  width: 25%;
+}
+.car-trip-doc .col-2 {
   width: 35%;
-  }
-  .car-trip-doc .col-3 {
-    width: 40%;
-  }
-  .car-trip-doc .car-trip-col:first-child {
-    text-align: left;
-  }
-  .car-trip-doc .car-trip-col:last-child {
-    text-align: right;
-  }
-  .car-trip-doc .car-trip-col img {
-    width: 310px;
-    height: 150px;
-    object-fit: cover;
-  }
-  .car-trip-doc h5 {
-    margin-bottom: 0;
-  }
-  .car-trip-col input {
-    font-size: 18px;
-  }
-  .wp-travel .wpte-dashboard .wpte-lrf-sidebar .wpte-lrf-tab {
-    flex-wrap: nowrap;
-    align-items: flex-start;
-  }
-  .wp-travel
-    .wpte-dashboard
-    .wpte-lrf-content-area
-    .wpte-lrf-tab.lrf-car-trip::before,
-  .wp-travel
-    .wpte-dashboard
-    .wpte-lrf-content-area
-    .wpte-lrf-tab.lrf-car-trip-doc::before {
-    font-family: fontawesome;
-    background-color: transparent;
-    border: 0;
-    box-shadow: none;
-    font-size: 18px;
-  }
-  .wp-travel
-    .wpte-dashboard
-    .wpte-lrf-content-area
-    .wpte-lrf-tab.lrf-car-trip::before {
-    content: "\f1b9" !important;
-  }
-  .wp-travel
-    .wpte-dashboard
-    .wpte-lrf-content-area
-    .wpte-lrf-tab.lrf-car-trip-doc::before {
-    content: "\f15b" !important;
-  }
-  .car-trip-image video#my-video {
-    width: 100%;
-  }
-  .car-trip-doc [type="file"]::file-selector-button {
-    display: block;
-  }
-  .car-trip-doc input {
-    width: 100%;
-    /* max-width: 120px; */
-  }
+}
+.car-trip-doc .col-3 {
+  width: 40%;
+}
+.car-trip-doc .car-trip-col:first-child {
+  text-align: left;
+}
+.car-trip-doc .car-trip-col:last-child {
+  text-align: right;
+}
+.car-trip-doc .car-trip-col img {
+  width: 310px;
+  height: 150px;
+  object-fit: cover;
+}
+.car-trip-doc h5 {
+  margin-bottom: 0;
+}
+.car-trip-col input {
+  font-size: 18px;
+}
+.wp-travel .wpte-dashboard .wpte-lrf-sidebar .wpte-lrf-tab {
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.wp-travel
+  .wpte-dashboard
+  .wpte-lrf-content-area
+  .wpte-lrf-tab.lrf-car-trip::before,
+.wp-travel
+  .wpte-dashboard
+  .wpte-lrf-content-area
+  .wpte-lrf-tab.lrf-car-trip-doc::before {
+  font-family: fontawesome;
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  font-size: 18px;
+}
+.wp-travel
+  .wpte-dashboard
+  .wpte-lrf-content-area
+  .wpte-lrf-tab.lrf-car-trip::before {
+  content: "\f1b9" !important;
+}
+.wp-travel
+  .wpte-dashboard
+  .wpte-lrf-content-area
+  .wpte-lrf-tab.lrf-car-trip-doc::before {
+  content: "\f15b" !important;
+}
+.car-trip-image video#my-video {
+  width: 100%;
+}
+.car-trip-doc [type="file"]::file-selector-button {
+  display: block;
+}
+.car-trip-doc input {
+  width: 100%;
+  /* max-width: 120px; */
+}
 
 /*
 Driver listing page start
@@ -817,11 +813,11 @@ Driver listing page start
   margin-top: 50px;
 }
 .single-card.driver-details h4 {
-  margin: 20px 0;
+  margin: 10px 0;
+  text-transform: capitalize;
 }
 .driver-details-rows {
-  column-gap: 30px;
-  row-gap: 50px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 .driver-details-rows .single-card {
@@ -837,7 +833,9 @@ Driver listing page start
   font-weight: 300;
   text-align: center;
   border-top: 1px solid rgba(6, 22, 38, 0.1019607843);
-  padding-top: 20px;
+  padding-top: 10px;
+  color: #000;
+  margin-bottom: 0;
 }
 .single-card-driver-contents .flex {
   justify-content: center;
@@ -854,9 +852,11 @@ Driver listing page start
 }
 .driver-details:hover a {
   color: #1a84ee;
+  text-decoration: none;
 }
 .single-driver-details-container p {
   margin: 0;
+  text-transform: capitalize;
 }
 .single-driver-details-container {
   display: flex;
@@ -864,49 +864,111 @@ Driver listing page start
   /* border: 1px solid #eaeaea; */
   /* padding: 40px; */
   align-items: center;
-  gap: 50px;
+  gap: 30px;
   margin-bottom: 30px;
 }
 .single-driver-page .container {
-  max-width: 1200px;
-  border: 1px solid #eaeaea;
+  max-width: 1000px;
+  /* border: 1px solid #eaeaea; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 40px;
+  border-radius: 20px;
 }
 .text-center {
   text-align: center;
 }
+.single-driver-page {
+  margin: 30px 0;
+}
 .single-driver-page h2 {
-  text-decoration: underline;
-  color: #1a84ee;
+  /* text-decoration: underline; */
+  color: #bf9b30;
+  text-transform: capitalize;
 }
 .single-driver-detail-inner-container {
-  border: 1px solid #000;
+  border: 1px solid #ebebeb;
   padding: 30px;
+  border-radius: 15px;
 }
 .single-driver-details-container img {
-  height: 250px;
+  height: 280px;
+  max-width: 280px;
   object-fit: cover;
   flex: 1;
+  border-radius: 10px;
 }
 .single-driver-details-container img + div {
-  flex: 2;
+  flex: 3;
+}
+.single-driver-detail-inner-container h4 {
+  color: #bf9b30;
+  margin-bottom: 15px;
+}
+.single-driver-detail-inner-container h4 p {
+  color: #000;
+  font-weight: 400;
 }
 .single-driver-vehicle-img img {
   display: flex;
   margin: auto;
+  width: 100%;
+  border-radius: 20px;
 }
 .single-driver-page button {
   border: transparent;
   padding: 12px 30px;
-  background-color: #1a84ee;
+  /* background-color: #1a84ee; */
   color: #fff;
+  border-radius: 5px;
+  border: 1px solid;
+}
+.single-driver-page button:hover {
+  border: 1px solid;
+}
+.single-driver-page button::after {
+  content: "\f178";
+  font-family: "FontAwesome";
+  margin-left: 10px;
 }
 .single-driver-page form {
   text-align: center;
   margin-top: 20px;
 }
+.single-driver-detail-inner-container span {
+  display: flex;
+  gap: 10px;
+}
+.single-driver-detail-inner-container span h4 {
+  min-width: 35%;
+}
 
+.single-driver-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.single-driver-profile {
+  text-align: center;
+}
+
+.single-driver-profile img {
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+.single-driver-details {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .single-driver-details-container {
+    flex-direction: column;
+    align-items: normal;
+  }
+  .single-driver-details-container img {
+    max-width: fit-content;
+  }
+}
 /*
 Driver listing page end
 */
-

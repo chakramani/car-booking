@@ -3,7 +3,8 @@
 Template Name: Drivers Archive
 */
 
-get_header();
+echo do_shortcode('[elementor-template id="5423"]');
+wp_head();
 
 // Get all users with the 'driver' role
 $args = array(
@@ -29,13 +30,14 @@ $drivers = get_users($args);
                 $user_name = $user_info->user_nicename;
                 $user_link = home_url('/driver/' . $user_name);
                 //$user_link = get_author_posts_url($user_id); 
+                $avatar_image = plugin_dir_url(__FILE__) . '../public/assets/images/Profile_avatar_placeholder.png';
                 ?>
                 <div class="single-card driver-details">
                     <a href="<?php echo $user_link; ?>">
-                        <img src="<?php echo $profile_image_src; ?>" alt="driver-img" title="driver-img" />
+                        <img src="<?php echo $profile_image_src ? $profile_image_src: $avatar_image; ?>" alt="driver-img" title="driver-img" />
                         <div class="single-card-driver-contents">
                             <h4 class="flex align-center gap-10"><?php echo $display_name; ?></h4>
-                            <p>Nice vehicle</p>
+                            <p>Vehicle Type</p>
                         </div>
                     </a>
                 </div>
@@ -45,4 +47,4 @@ $drivers = get_users($args);
 </section>
 
 <?php
-// get_footer();
+get_footer();
