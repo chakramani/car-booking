@@ -966,8 +966,30 @@ Driver listing page start
     align-items: normal;
   }
   .single-driver-details-container img {
-    max-width: fit-content;
+    max-width: fit-content; 
   }
+}
+.single-driver-book-now {
+    width: 100%;
+    text-align: center;
+}
+.single-driver-book-now a {
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #BF9B30;
+    padding: 10px 70px 10px 50px;
+    border-radius: 8px;
+	position: relative;
+}
+.single-driver-book-now a:hover {
+	text-decoration: none;
+} 
+.single-driver-book-now a:after {
+	content: "→";
+    position: absolute;
+    top: 22%;
+    right: 40px;
+    font-size: 20px;
 }
 /*
 Driver listing page end

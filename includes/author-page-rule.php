@@ -15,8 +15,7 @@ add_filter('query_vars', 'my_plugin_query_vars');
 
 // Function to redirect to custom templates
 function my_plugin_template_redirect() {
-    $driver_id = get_query_var('driver_id');
-    if (get_query_var('drivers') == 'true') {
+    if (get_query_var('drivers')) {
         include plugin_dir_path(__FILE__) . '../templates/drivers-archive.php';
         exit;
     }
@@ -27,3 +26,15 @@ function my_plugin_template_redirect() {
 }
 add_action('template_redirect', 'my_plugin_template_redirect');
 
+// Flush rewrite rules on activation
+function custom_flush_rewrite_rules() {
+    my_plugin_rewrite_rules();
+    flush_rewrite_rules();
+}
+register_activation_hook(__FILE__, 'custom_flush_rewrite_rules');
+
+// Flush rewrite rules on deactivation
+function custom_deactivate() {
+    flush_rewrite_rules();
+}
+register_deactivation_hook(__FILE__, 'custom_deactivate');

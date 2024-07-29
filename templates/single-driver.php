@@ -50,6 +50,9 @@ if ($author && in_array('driver', $author->roles)) :
       <div class="single-driver-vehicle-img">
         <img src="<?php echo $vehicle_image_src; ?>" alt="vehicle-img" />
       </div>
+		<div class="single-driver-book-now">
+        	<a href="/my-account/">Book Now </a>
+      </div>
     </div>
   </section>
 <?php else : ?>
